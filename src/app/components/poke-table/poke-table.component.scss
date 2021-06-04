@@ -1,0 +1,76 @@
+@import "../../../assets/styles/variables.scss";
+
+.container{
+    color: black;
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+table {
+    border: 1px solid lightgrey;
+    min-width: 100%;
+    text-align: center;
+}
+
+.mat-header-cell {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+//even
+//Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
+.mat-row:nth-child(even) {
+    background-color: $white;
+}
+
+//odd
+//Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+.mat-row:nth-child(odd) {
+    background-color: white;
+    & .mat-cell {
+        color: black;
+    }
+}
+
+.mat-cell:first-letter {
+    text-transform: uppercase;
+}
+
+.mat-row:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+.mat-paginator-outer-container {
+    margin-top: 25px !important;
+    display: flex;
+}
+::ng-deep.mat-paginator {
+  
+    width: 100%;
+    margin: auto;
+}
+.mat-paginator {
+    border: 1px solid lightgrey;
+    margin-top: 25px;
+    width: 100%;
+}
+.mat-form-field {
+    font-size: 13px;
+    width: 20%;
+    padding: 0;
+}
+
+::ng-deep.mat-form-field-label {
+    color: $white !important;
+}
+::ng-deep.mat-form-field-underline {
+    background-color: $white !important;
+}
+
+input {
+    color: $white !important;
+}

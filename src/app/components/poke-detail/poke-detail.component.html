@@ -1,0 +1,25 @@
+<mat-card class="card">
+
+  <h3 style="float: left;margin-top: 3px;color: lightseagreen;font-weight: bolder;text-transform: uppercase;">Pokemon Detail</h3>
+  <a (click)="seeMore()"><button class="btn btn-info" style="color: white;text-align: center;float: right;">See More</button></a>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <mat-card-header>
+    <img mat-card-avatar class="header-image" src="{{pokemonImg}}">
+    <mat-card-title>{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image src="{{pokemonImg}}" alt="pokemon">
+
+  <mat-card-content>
+    <mat-chip-list>
+      <mat-chip color="primary">Type: {{pokemonType}}</mat-chip>
+      <mat-chip color="primary">Height: {{pokemon.height}}</mat-chip>
+      <mat-chip color="primary">Weight: {{pokemon.weight}}</mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+
+</mat-card>
